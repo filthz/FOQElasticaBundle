@@ -9,7 +9,7 @@ use Elastica_Document;
 use Symfony\Component\Form\Util\PropertyPath;
 
 /**
- * Maps Elastica documents with Doctrine objects
+ * Maps Elastica documents with Doctrine objects.
  * This mapper assumes an exact match between
  * elastica documents ids and doctrine object ids
  */
