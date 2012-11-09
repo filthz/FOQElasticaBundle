@@ -76,9 +76,11 @@ abstract class AbstractElasticaToModelTransformer implements ElasticaToModelTran
         }
 
         $objects = $this->findByIdentifiers($ids, $this->options['hydrate']);
+/*
         if (count($objects) < count($elasticaObjects)) {
             throw new \RuntimeException('Cannot find corresponding Doctrine objects for all Elastica results.');
         };
+*/
 
         foreach ($objects as $object) {
             if ($object instanceof HighlightableModelInterface) {
